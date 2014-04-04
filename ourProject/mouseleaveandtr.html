@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+ 
+
+ 
+var count=0;
+$(document).ready(function(){
+  $("#firstTable").mouseleave(function(){
+    alert("u r trying to change row color using mouseleave function broth!");
+	count++;
+	if(count%2==0){
+	$("tr:even").css("background-color","yellow");
+	$("tr:odd").css("background-color","white");
+	//$("#row1").css("background-color","white");
+
+	}else{
+		$("tr:odd").css("background-color","yellow");
+		$("tr:even").css("background-color","white");
+		//$("#row1").css("background-color","white");
+
+	}
+  });
+}); 
+  
+</script>
+</head>
+<body>
+
+<h1>Welcome to My Web Page</h1>
+ <table id="firstTable" width="260px"> <tr width="50%"><td>Change row colour by mouse leave.</td></tr> </table>
+ 
+ <table id="t1" border="1">
+<tr>
+  <th>Company</th>
+  <th>Country</th>
+</tr>
+<tr>
+<td>Alfreds Futterkiste</td>
+<td>Germany</td>
+</tr>
+<tr>
+<td>Berglunds snabbköp</td>
+<td>Sweden</td>
+</tr>
+<tr>
+<td>Centro comercial Moctezuma</td>
+<td>Mexico</td>
+</tr>
+<tr>
+<td>Ernst Handel</td>
+<td>Austria</td>
+</tr>
+<tr>
+<td>Island Trading</td>
+<td>UK</td>
+</tr>
+</table> 
+
+
+</body>
+</html>
